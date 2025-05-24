@@ -6,4 +6,4 @@ scikit-learn==1.6.1
 joblib==1.4.2
 scipy==1.13.0
 streamlit==1.45.1
-scikit-surprise @ git+https://github.com/NicolasHug/Surprise.git@master#egg=scikit-surprise
+scikit-surprise==1.1.3
