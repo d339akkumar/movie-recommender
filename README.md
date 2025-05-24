@@ -25,3 +25,4 @@ This project implements a **hybrid movie recommender system** using the [MovieLe
 - Scikit-Learn, Surprise, LightFM
 - Streamlit (for UI deployment)
 - Matplotlib, Seaborn (for EDA)
+## click on [link](https://deepak-movie-recommendation-ybejongj2zb5wdmz5macf4.streamlit.app/) to check out the deployed site
