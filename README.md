@@ -26,3 +26,4 @@ This project implements a **hybrid movie recommender system** using the [MovieLe
 - Streamlit (for UI deployment)
 - Matplotlib, Seaborn (for EDA)
 ## click on [link](https://deepak-movie-recommendation-ybejongj2zb5wdmz5macf4.streamlit.app/) to check out the deployed site
+## Recommender.ipynb : Jupyter notebook with deep analysis and trained on various model
