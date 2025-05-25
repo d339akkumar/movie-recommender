@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from surprise import SVD, Dataset, Reader
@@ -26,13 +27,13 @@ def preprocess_data(movies, ratings):
     return cosine_sim, movieid_to_idx, idx_to_movieid
 
 # Train collaborative model
-def train_svd_model(ratings):
-    reader = Reader(rating_scale=(1, 5))
-    data = Dataset.load_from_df(ratings[['user_id', 'movie_id', 'rating']], reader)
-    trainset = data.build_full_trainset()
-    model = SVD()
-    model.fit(trainset)
+
+
+def load_svd_model():
+    with open("models/svd_model.pkl", "rb") as f:
+        model = pickle.load(f)
     return model
+
 
 # Content-based recommendation
 

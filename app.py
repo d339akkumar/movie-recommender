@@ -8,7 +8,7 @@ st.title("🎬 Movie Recommender System")
 def load_all():
     movies, ratings, users = load_data()
     cosine_sim, movieid_to_idx, idx_to_movieid = preprocess_data(movies, ratings)
-    svd_model = train_svd_model(ratings)
+    svd_model = load_svd_model()
     return movies, ratings, users, cosine_sim, movieid_to_idx, svd_model
 
 movies, ratings, users, cosine_sim, movieid_to_idx, svd_model = load_all()
